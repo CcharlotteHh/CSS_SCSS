@@ -57,10 +57,11 @@ input {
 .navbar {
   min-height: 100px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-decoration: none;
-  padding: 0 24px;
+  flex-direction: row;
+  place-items: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  flex-grow: 0;
 }
 .navbar .nav-branding {
   font-size: 2rem;
