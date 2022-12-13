@@ -6,9 +6,7 @@
     }
   
     .nav-menu {
-      font-size: 2rem;
-      list-style: none;
-      display: flex;
+        @include flexbox($placeItems:start);
   
       .nav-item {
         .nav-link {

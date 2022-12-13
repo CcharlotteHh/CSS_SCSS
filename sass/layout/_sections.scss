@@ -1,3 +1,22 @@
 section{
     height: $vh100;
 }
+
+.landingpage{
+    @include flexbox($placeContent: center);
+    @include flexbox($placeItems:center);
+    .content {
+        @include flexbox($placeContent: center);
+        @include flexbox($placeItems:center);
+        .typing-slider{
+            height: 38%;
+      width: 100%;
+      p{
+
+        font-size:$primaryFontSize;
+        color: $almostpurple;
+      }
+    
+        }
+    }
+}
