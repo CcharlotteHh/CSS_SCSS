@@ -4,6 +4,7 @@
 // base and layout
 @import './base/reset';
 @import './layout/navbar';
+@import './layout/sections';
 @import './layout/footer';
 // colors
 
@@ -11,9 +12,3 @@
 
 // utilitites 
 
-
-
-h1{
-    font-family: $primaryFontFamily;
-    color: $mint;
-}

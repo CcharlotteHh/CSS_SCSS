@@ -11,35 +11,188 @@
 </head>
 
 <body>
-  <!--navbar-->
-  <nav class="navbar">
-    <a href="/" class="navbar__logo">SASS</a>
-    <div class="navbar__bars"><i class="fas fa-bars"></i></div>
-    <div class="navbar__menu">
-      <a href="" class="navbar__menu--links">About Me</a>
-      <a href="" class="navbar__menu--links">Projects</a>
-      <a href="" class="navbar__menu--links">Contact</a>
-    </div>
-  </nav>
-  <!-- hero -->
-  <div class="hero">
-    <div class="hero__container">
-      <div class="hero__container--left">
-        <h1>Charlotte Hage</h1>
-        <h2>Webdevelopment</h2>
-        <p>Contact me</p>
-        <button class="hero__container--btn">
-          <a href="#">Github</a>
-        </button>
+  <div id="container">
+    <header>
+      <nav class="navbar">
+        <a href="#" class="hamburger" onclick="myFunction()" >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <ul class="nav-menu" id="navMenu">
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Projecten</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">Over Mij</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+       
+      </nav>
+    </header>
+    <main>
+      <section class="landingpage">
+        <div class="content">
+          <div class="typing-slider">
+            <p>Charlotte</p>
+            <p>Hage</p>
+          </div>
+
+        </div>
+      </section>
+      <section id="projects" class="projects">
+        <!-- Project-->
+        <div class="projectContainer">
+          <div class="projectCard">
+            <figure class="projectImg">
+              <img src="assets/img/frontend.PNG" alt="frontend">
+            </figure>
+            <div class="projectDesc">
+              <h2>Webshop Frontend</h2>
+              <p>In dit project heb ik een webshop uitgewerkt. Ik heb dit gedaan met CSS. Je kunt door de
+                website heen klikken en de verschillende pagina's bekijken.
+              </p>
+              <a href="https://github.com/CcharlotteHh/webshopjustcss">Githublink</a>
+            </div>
+          </div>
+          <div class="projectCard">
+            <figure class="projectImg">
+              <img src="assets/img/backend.png" alt="backend">
+            </figure>
+            <div class="projectDesc">
+              <h2>Webshop Backend</h2>
+              <p>In dit project heb ik de Backend van mijn webshop uitgewerkt, ik heb een inlog en registreer pagina gemaakt. Ik heb ook een CRUD gemaakt voor prodcten en categorie.
+                Dit is allemaal gekoppeld aan een database.
+              </p>
+              <a href="https://github.com/CcharlotteHh/webshop_php_eindopdracht">Githublink</a>
+            </div>
+          </div>
+          <div class="projectCard">
+            <figure class="projectImg">
+              <img src="assets/img/vwn.png" alt="vnw">
+            </figure>
+            <div class="projectDesc">
+              <h2>Vrijwilligershuis</h2>
+              <p>Dit is een groepproject in samenwerking met 2 klasgenoten. We hebben een website gemaakt voor Vrijwilligershuis Nieuwegein.
+                Deze website word gebruikt voor het verwerken van donaties en aangeboden hulp aan vluchtelingen uit Oekraïne.
+              </p>
+              <a href="">Githublink</a>
+            </div>
+          </div>
+          <div class="projectCard">
+            <figure class="projectImg">
+              <img src="assets/img/zodiac.png" alt="zodiac">
+            </figure>
+            <div class="projectDesc">
+              <h2>Starsigns Project</h2>
+              <p>In dit project heb ik een pagina gemaakt waar door sterrenbeelden heen geklikt kan worden. De data hiervoor staat in een JSON bestand.</p>
+              <a href="https://github.com/CcharlotteHh/zodiac_signs">Githublink</a>
+            </div>
+          </div>
+          <div class="projectCard">
+            <figure class="projectImg">
+              <img src="assets/img/eindproduct.jpg" alt="eindproduct">
+            </figure>
+            <div class="projectDesc">
+              <h2>Eindproduct</h2>
+              <p>Een online website waar al mijn projecten en opdrachten voor het vak WEB uit het eerste jaar van mijn opleiding online staan weergegeven.</p>
+              <a href="https://u210547.gluweb.nl/eindopdracht/">Githublink</a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+        <!--about-->
+      <section id="about" class="aboutMe">
+        <div class="aboutMain">
+        <figure class="aboutImg">
+            <img src="assets/img/placeholder.jpg" alt="placeholder">
+        </figure>    
+          <div class="aboutText">
+            <h2>Over mij</h2>
+            <h5>Webdeveloper</h5>
+           <p> Mijn naam is Charlotte Hage.
+            Ik ben een Webdevelopment student op het Grafisch Lycuem.
+            Ik heb ervaring met het vormgeven van websites met CSS en heb binnen mijn
+          opleiding gewerkt met Tailwind css en Bootstrap CSS. Ik heb ook ervaring met PHP en het
+        gebruken van databases om data op te slaan en weer te geven op websites.
+        Ik kan zelfstandig werken maar heb ook ervaring met het samen maken van projecten met andere webdevelopers.
+        Ik vind het leuk om mijn ideeen om te zetten in een product en geinspireerd te worden door anderen.
+      </p>
+      <a href="#projects">Mijn projecten</a>
+          </div>
+        </div>
+        <div class="about2">
+          <div class="experience">
+            <h2>Ik heb ervaring met</h2>
+            <div class="imgContainer">
+              <figure>
+                <img src="assets/img/bootstrap.png" alt="bootstrap">
+              </figure>
+              <figure>
+                <img src="assets/img/mysql.png" alt="mysql">
+              </figure>
+              <figure>
+                <img src="assets/img/css.png" alt="css">
+              </figure>
+              <figure>
+                <img src="assets/img/php.png" alt="php">
+              </figure>
+            </div>
+          </div> 
+          <div class="experience">
+            <h2>Wat ben ik aan het leren</h2>
+            <div class="imgContainer">
+              <figure>
+                <img src="assets/img/sass.png" alt="sass">
+              </figure>
+              <figure>
+                <img src="assets/img/python.png" alt="python">
+              </figure>
+              <figure>
+                <img src="assets/img/jquery.png" alt="jquery">
+              </figure>
+              <figure>
+                <img src="assets/img/json.png" alt="json">
+              </figure>
+            </div>
+          </div> 
+          </div>       
+          
+    
+  </div>
+</div>
+  </section>
+  <section id="contact" class="contact">
+    <!--contact-->
+    <div class="contact-container">
+      <!--formcontainer-->
+      <div class="form-container">
+        <h3>Contact</h3>
+        <form method="POST" action="form.php" class="contact-form">
+          <input type="text" value="naam" placeholder="*Naam" required name="name">
+          <input type="email" value="email" placeholder="*Email" required name="email">
+          <textarea name="" id="" cols="30" rows="10" placeholder="*bericht"></textarea>
+          <input type="submit" value="Verstuur" class="send-button">
+        </form>
       </div>
-     <ul>
-      <li>klsd</li>
-      <li>d</li>
-      <li>d</li>
-     </ul>
+      <!--Map-->
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2452.1476182922993!2d5.104056215791017!3d52.07704257973276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c6658b39d11917%3A0xc4aaed9051c276c!2sGrafisch%20Lyceum%20Utrecht!5e0!3m2!1snl!2snl!4v1668588707229!5m2!1snl!2snl"
+          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </div>
+  </section>
+  </main>
+  <footer>
+    <a href="https://github.com/CcharlotteHh"><i class="fa-brands fa-github"></i></a>
+  </footer>
   </div>
   <script src="assets/js/script.js"></script>
-</body>S
+</body>
 
 </html>

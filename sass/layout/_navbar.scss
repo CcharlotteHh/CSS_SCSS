@@ -1,9 +1,8 @@
 .navbar {
-    min-height: 100px;
+    font-size: $primaryFontSize;
     @include flexbox($placeItems: center);
     .nav-branding {
-      font-size: 2rem;
-      text-decoration: none;
+      
     }
   
     .nav-menu {

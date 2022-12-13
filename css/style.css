@@ -54,18 +54,18 @@ input {
   border-radius: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .navbar {
-  min-height: 100px;
+  font-size: 3rem;
   display: flex;
   flex-direction: row;
   place-items: center;
   flex-wrap: nowrap;
   flex-shrink: 0;
   flex-grow: 0;
-}
-.navbar .nav-branding {
-  font-size: 2rem;
-  text-decoration: none;
 }
 .navbar .nav-menu {
   font-size: 2rem;
@@ -97,6 +97,10 @@ input {
   background-color: white;
 }
 
+section {
+  height: 100vh;
+}
+
 footer {
   display: flex;
   justify-content: center;
@@ -105,9 +109,4 @@ footer {
 }
 footer a i {
   font-size: 3rem;
-}
-
-h1 {
-  font-family: "Roboto Mono", monospace;
-  color: #d8f3db;
 }
