@@ -1,15 +1,17 @@
 // variables & functions
-@import '_variables';
+@import './abstracts/variables';
 // base and layout
-@import '_base';
+@import './base/reset';
+@import './layout/navbar';
+@import './layout/footer';
 // colors
 
 // components (button cards navbar
 
-// utiflitites 
+// utilitites 
 
 
 h1{
     font-family: $primaryFontFamily;
-    color: $lilac;
+    color: $mint;
 }
