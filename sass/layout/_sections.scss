@@ -2,21 +2,22 @@ section{
     height: $vh100;
 }
 
-.landingpage{
-    @include flexbox($placeContent: center);
-    @include flexbox($placeItems:center);
-    .content {
-        @include flexbox($placeContent: center);
-        @include flexbox($placeItems:center);
-        .typing-slider{
-            height: 38%;
-      width: 100%;
-      p{
-
-        font-size:$primaryFontSize;
-        color: $almostpurple;
-      }
-    
-        }
+.projects{
+    height: $vh100;
+  
+    .projectContainer {
+        height: 100%;
+        @include flexbox;
+        flex-wrap: wrap;
+        @include flexbox($justifyContent: space-between);
     }
+        }
+
+.aboutMain{
+    height: $vh100;
+    background-color: $pink;
+    width: 100%;
+    @include flexbox($alignItems: center);
 }
+
+
