@@ -1,23 +1,90 @@
-section{
-    height: $vh100;
+.landingpage {
+  @include flexbox($justifyContent: center, $alignItems: center);
+  height: $vh100;
 }
 
-.projects{
-    height: $vh100;
+.projects {
+  height: $vh100;
+
+  .projectContainer {
+    height: 100%;
+    @include flexbox;
+    flex-wrap: wrap;
+    @include flexbox($justifyContent: space-between);
+  }
+}
+.aboutme{
+ height: $vh100;
+}
+.aboutMain {
   
-    .projectContainer {
-        height: 100%;
-        @include flexbox;
-        flex-wrap: wrap;
-        @include flexbox($justifyContent: space-between);
-    }
-        }
+  width: 100%;
+  @include flexbox($justifyContent: center, $alignItems: center);
+  .aboutImg {
+    height: $aboutImgHeight;
+    width: $aboutImgWidth;
+    margin-left: 2%;
 
-.aboutMain{
-    height: $vh100;
-    background-color: $pink;
-    width: 100%;
-    @include flexbox($alignItems: center);
+    img {
+      @include imgCover;
+    }
+  }
+  .aboutText {
+    width: 70%;
+    height: 60%;
+    background-color: aqua;
+
+    h2 {
+      font-size: 3.5rem;
+    }
+    h5 {
+      font-size: 1.5rem;
+    }
+    p {
+      text-align: center;
+    }
+    a {
+      border-radius: 20px;
+      background-color: $almostpurple;
+      border: none;
+      @include flexbox;
+      width: 30%;
+      height: 10%;
+      &:hover {
+        transition: all 300ms ease-in;
+        transform: scale(1.02);
+        background-color: $purple;
+      }
+    }
+  }
 }
 
+.about2 {
+  @include flexbox;
 
+}
+
+.contact {
+  height: $vh100;
+  width: 100%;
+  background-color: $blue;
+  @include flexbox;
+
+ 
+  .map iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (max-width: 700px) {
+    .contact-container {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+
+      .map iframe {
+        height: 500px;
+      }
+    }
+  }
+
+}

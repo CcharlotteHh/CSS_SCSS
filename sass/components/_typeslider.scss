@@ -7,6 +7,10 @@ $slider-font-size-responsive: 5rem;
 $background: gray;
 $small: 700px;
 
+p{
+  color: $white;
+}
+
 @keyframes cursor {
     to {
       border-color: transparent;

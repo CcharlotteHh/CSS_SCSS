@@ -3,10 +3,12 @@
 @import './abstracts/mixins';
 // base and layout
 @import './base/reset';
+@import './layout/sections';
 @import './layout/navbar';
 @import './components/typeslider';
-@import './layout/sections';
 @import './components/cards';
+@import './components/aboutgrid';
+@import './components/form';
 @import './layout/footer';
 // colors
 

@@ -1,0 +1,17 @@
+.experience {
+    height: 100%;
+    @include flexbox($direction: row);
+    width: 50%;
+  }
+
+  .imgContainer {
+    width: 95%;
+    @include grid("grid-template-columns", "1fr 1fr", 0px, 0px);
+    @include grid("grid-template-rows", "300px 300px", 0px, 0px);
+    figure {
+        grid-column: span 1;
+    img{
+        @include imgContain;
+    }
+    }
+  }

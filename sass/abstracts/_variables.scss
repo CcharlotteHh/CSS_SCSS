@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto+Slab:wght@300&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap");
 // fonts
-$primaryFontFamily: 'Roboto Mono', monospace;
+$primaryFontFamily: 'roboto';
 // colors
 $blue: #b2a8df;
 $lavander: #ccacdc;
@@ -14,11 +13,33 @@ $blue: #0b2153;
 $purple: #483261;
 $almostpurple: #943b71;
 $pink: #d35d8f;
+$white: white;
 
 // font size 
 $primaryFontSize:3rem;
 $secondaryFontSize:2rem;
+$cardPFontSize:16px;
 
 //vh
 $vh100 :100vh;
 $vh50 :50vh;
+
+//about img
+$aboutImgHeight:60%;
+$aboutImgWidth:40%;
+
+//spacing
+$spaceamounts: (5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 75, 100); // Adjust this to include the pixel amounts you need.
+$sides: (top, bottom, left, right); // Leave this variable alone
+
+@each $space in $spaceamounts {
+  @each $side in $sides {
+    .m-#{str-slice($side, 0, 1)}-#{$space} {
+      margin-#{$side}: #{$space}px !important;
+    }
+  
+    .p-#{str-slice($side, 0, 1)}-#{$space} {
+      padding-#{$side}: #{$space}px !important;
+    }
+  }
+}
