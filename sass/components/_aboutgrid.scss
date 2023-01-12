@@ -1,7 +1,6 @@
 .experience {
     height: 100%;
-    @include flexbox($direction: row);
-    width: 50%;
+    @include flexbox($direction: column);
   }
 
   .imgContainer {

@@ -22,9 +22,7 @@
     border: 1px solid white;
     color: $white;
     @include flexbox;
-    @include flexbox($direction: column,$alignItems: center);
 
-    @include flexbox();
 
     h2 {
         border: 1px solid white;
