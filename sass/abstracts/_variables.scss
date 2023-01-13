@@ -1,6 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto+Slab:wght@300&display=swap');
 // fonts
-$primaryFontFamily: 'Roboto';
+$primaryFontFamily: 'Roboto Slab', serif;
+
 // colors
 $blue: #b2a8df;
 $lavander: #ccacdc;
@@ -15,6 +16,11 @@ $almostpurple: #943b71;
 $pink: #d35d8f;
 $white: white;
 $navbarRepsonsiveBg:#0b2153;
+
+//cardbackground
+
+$cardGradient: no-repeat center center fixed
+linear-gradient(to top, $darkblue, $blue, $purple, $almostpurple);
 
 // font size 
 $primaryFontSize:3rem;

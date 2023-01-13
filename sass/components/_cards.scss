@@ -1,6 +1,7 @@
 .projectCard {
   opacity: 0.9;
   width: 20%;
+
   height: $vh100;
   @include flexbox($direction: column);
 
@@ -8,6 +9,11 @@
     opacity: 1;
     transition: all 300ms ease-in;
     transform: scale(1.02);
+  }
+  @include md {
+    .projectCard {
+      flex-basis: 50%;
+    }
   }
 
   .projectImg {
@@ -18,25 +24,22 @@
   }
 
   .projectDesc {
+    background: $cardGradient;
     height: 50%;
-    border: 1px solid white;
     color: $white;
-    @include flexbox;
-
+    width: 100%;
+    @include flexbox($direction: column, $alignItems: center);
+    position: relative;
 
     h2 {
-        border: 1px solid white;
+      height: 33.33%;
       font-size: $secondaryFontSize;
+      margin-top: 4%;
     }
     p {
       font-size: $cardPFontSize;
-      width: 60%;
-      border: 1px solid white;
-    }
-    a {
-      width: 60%;
-      border: 1px solid white;
-
+      width: 80%;
+      height: 55%;
     }
   }
 }

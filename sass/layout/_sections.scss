@@ -5,12 +5,15 @@
 
 .projects {
   height: $vh100;
+  @include flexbox;
 
   .projectContainer {
     height: 100%;
+    width: 100%;
     @include flexbox;
     flex-wrap: wrap;
-    @include flexbox($justifyContent: space-between);
+    @include flexbox($justifyContent: space-around);
+
   }
 }
 
@@ -19,6 +22,9 @@
   height: 100vh;
   width: 100%;
   @include flexbox($justifyContent: center, $alignItems: center);
+  @include md{
+    @include flexbox($direction:column);
+  }
   .aboutImg {
     height: $aboutImgHeight;
     width: $aboutImgWidth;
