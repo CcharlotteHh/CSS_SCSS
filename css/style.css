@@ -479,6 +479,7 @@ a {
 }
 
 .aboutMain {
+  color: white;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -510,7 +511,6 @@ a {
   width: 60%;
   height: 60%;
   margin: 5%;
-  color: white;
 }
 .aboutMain .aboutText h2 {
   font-size: 3.5rem;
@@ -573,6 +573,7 @@ a {
 
 .navbar {
   min-height: 100px;
+  width: 100%;
   font-size: 3rem;
   display: flex;
   flex-direction: row;
@@ -581,13 +582,45 @@ a {
   flex-shrink: 0;
   flex-grow: 0;
 }
+@media (max-width: 700px) {
+  .navbar {
+    background-color: #0d1732;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    flex-grow: 0;
+  }
+}
+.navbar .nav-branding {
+  font-size: 2rem;
+}
 .navbar .nav-menu {
+  display: none;
   display: flex;
   flex-direction: row;
   place-items: start;
   flex-wrap: nowrap;
   flex-shrink: 0;
   flex-grow: 0;
+}
+@media (max-width: 700px) {
+  .navbar .nav-menu {
+    display: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    flex-grow: 0;
+    padding: 1rem;
+  }
+}
+@media (max-width: 700px) {
+  .navbar .nav-menu .nav-item {
+    text-align: center;
+  }
 }
 .navbar .nav-menu .nav-item .nav-link {
   display: block;
@@ -602,11 +635,26 @@ a {
   top: 1rem;
   right: 2rem;
   display: none;
+  display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  flex-grow: 0;
   width: 40px;
   height: 31px;
   background-color: #0b2153;
+}
+@media (max-width: 700px) {
+  .navbar .hamburger {
+    margin-top: 3%;
+    background-color: #0d1732;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    flex-grow: 0;
+  }
 }
 .navbar .hamburger .bar {
   height: 3px;
@@ -746,9 +794,12 @@ p {
   height: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   flex-wrap: nowrap;
   flex-shrink: 0;
   flex-grow: 0;
+  width: 50%;
+  color: white;
 }
 
 .imgContainer {

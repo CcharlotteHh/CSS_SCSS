@@ -1,42 +1,62 @@
 .navbar {
-    min-height: 100px;
-    font-size: $primaryFontSize;
-    @include flexbox($placeItems: center);
-    .nav-branding {
-      
+  min-height: 100px;
+  width: 100%;
+  font-size: $primaryFontSize;
+  @include flexbox($placeItems: center);
+  @include md {
+    background-color: $darkblue;
+    @include flexbox($direction: column, $alignItems: flex-start);
+  }
+  .nav-branding {
+    font-size: $secondaryFontSize;
+  }
+
+  .nav-menu {
+    display: none;
+    @include flexbox($placeItems: start);
+    @include md {
+      display: none;
+      width: 100%;
+      @include flexbox($direction: column);
+      padding: 1rem;
     }
-  
-    .nav-menu {
-        @include flexbox($placeItems:start);
-  
-      .nav-item {
-        .nav-link {
-          display: block;
-          padding: 1rem;
-          color: $white;
-          &:hover {
-            opacity: 0.5;
-          }
+    // font-size:$secondaryFontSize;
+
+    .nav-item {
+      @include md {
+        text-align: center;
+      }
+      .nav-link {
+        display: block;
+        padding: 1rem;
+        color: $white;
+
+        &:hover {
+          opacity: 0.5;
         }
       }
     }
-    .hamburger {
-      position: absolute;
-      top: 1rem;
-      right: 2rem;
-      display: none;
-      flex-direction: column;
-      justify-content: space-between;
-      width: 40px;
-      height: 31px;
-      background-color: #0b2153;
-      .bar {
-        height: 3px;
-        width: 100%;
-        background-color: white;
-      }
+  }
+  .hamburger {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    display: none;
+    @include flexbox($direction: column, $alignItems: flex-start);
+    width: 40px;
+    height: 31px;
+    background-color: $navbarRepsonsiveBg;
+
+    @include md {
+      margin-top: 3%;
+      background-color: $darkblue;
+      @include flexbox;
+    
+    }
+    .bar {
+      height: 3px;
+      width: 100%;
+      background-color: white;
     }
   }
-  
-
-  
+}
