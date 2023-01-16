@@ -2,6 +2,7 @@
   min-height: 100px;
   width: 100%;
   font-size: $primaryFontSize;
+  margin-left:1rem ;
   @include flexbox($placeItems: center);
   @include md {
     background-color: $darkblue;
@@ -12,8 +13,9 @@
   }
 
   .nav-menu {
+    font-size:$secondaryFontSize;
     display: none;
-    @include flexbox($placeItems: start);
+    @include flexbox($placeContent: start);
     @include md {
       display: none;
       width: 100%;
@@ -28,7 +30,7 @@
       }
       .nav-link {
         display: block;
-        padding: 1rem;
+        margin-right: 1.5rem;
         color: $white;
 
         &:hover {
@@ -42,15 +44,15 @@
     top: 1rem;
     right: 2rem;
     display: none;
-    @include flexbox($direction: column, $alignItems: flex-start);
     width: 40px;
     height: 31px;
     background-color: $navbarRepsonsiveBg;
-
+    justify-content: space-between;
     @include md {
       margin-top: 3%;
       background-color: $darkblue;
       @include flexbox;
+      justify-content: space-between;
     
     }
     .bar {

@@ -1,5 +1,6 @@
 footer{
    @include flexbox;
+   height: $vh50;
     justify-content:center;
      background-color:$blue;
      padding-bottom:10px;

@@ -41,6 +41,14 @@
   flex-grow: $grow;
 }
 
+
+@mixin flex-basis($value: auto) {
+  -webkit-flex-basis: $value;
+  -moz-flex-basis: $value;
+  -ms-flex-preferred-size: $value;
+  flex-basis: $value;
+}
+
 @mixin flex-direction($direction) {
   @if $direction == column {
     -webkit-flex-direction: vertical;
@@ -83,4 +91,18 @@
   border-radius: 40px;
 
   
+}
+//spacing
+@mixin padding($top, $right, $bottom, $left) {
+  padding-top: $top;
+  padding-right: $right;
+  padding-bottom: $bottom;
+  padding-left: $left;
+}
+//Margin mixin
+@mixin margin($top, $right, $bottom, $left) {
+  margin-top: $top;
+  margin-right: $right;
+  margin-bottom: $bottom;
+  margin-left: $left;
 }

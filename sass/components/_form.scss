@@ -2,8 +2,7 @@
     max-width: 1200px;
     margin: auto;
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    @include grid("grid-template-columns", "1fr 1fr", 0px, 0px);
     gap: 1.5rem;
     color: white;
     background-color: $darkblue;
@@ -11,9 +10,7 @@
     overflow: hidden;
 
     .form-container {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
+      @include flexbox($direction: column, $alignItems: center);
       padding: 1%;
       h3 {
         font-size: 2rem;

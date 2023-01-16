@@ -10,10 +10,12 @@
     transition: all 300ms ease-in;
     transform: scale(1.02);
   }
-  @include md {
-    .projectCard {
-      flex-basis: 50%;
-    }
+  @include breakpoint($bp:770px) {
+      
+      width: 50%;
+      background-color: green;
+    
+
   }
 
   .projectImg {
@@ -32,14 +34,21 @@
     position: relative;
 
     h2 {
-      height: 33.33%;
-      font-size: $secondaryFontSize;
+      font-size:$cardH2Size;
       margin-top: 4%;
     }
     p {
       font-size: $cardPFontSize;
       width: 80%;
-      height: 55%;
+      height: 15%;
+      margin-top:10%;
+      text-align: center;
+    }
+
+    a{
+      width: 60%;
+      position: absolute;
+      bottom: 0px;
     }
   }
 }

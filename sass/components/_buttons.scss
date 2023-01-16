@@ -2,21 +2,23 @@
     
     @include flexbox($justifyContent:center, $alignItems:center);
     color:white;
-    padding: 1%;
+    
     margin-bottom: 10%;
-    width: 100%;
+    width: 60%;
     height: 15%;
     @include prBtn;
+    
 }
 
 .aboutBtn{
     @include flexbox($justifyContent:center, $alignItems:center);
     color:white;
+    width: 30%;
 
     @include md{
-        .aboutBtn{
+        
             width: 80%;
-        }
+        
     }
     
 }
