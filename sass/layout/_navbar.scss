@@ -1,6 +1,6 @@
 .navbar {
   min-height: 100px;
-  width: 100%;
+  max-width: 100%;
   font-size: $primaryFontSize;
   margin-left:1rem ;
   @include flexbox($placeItems: center);
