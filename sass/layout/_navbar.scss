@@ -5,6 +5,7 @@
   margin-left:1rem ;
   @include flexbox($placeItems: center);
   @include md {
+    margin-left:0;
     background-color: $darkblue;
     @include flexbox($direction: column, $alignItems: flex-start);
   }
@@ -14,7 +15,7 @@
 
   .nav-menu {
     font-size:$secondaryFontSize;
-    display: none;
+   
     @include flexbox($placeContent: start);
     @include md {
       display: none;
@@ -32,6 +33,10 @@
         display: block;
         margin-right: 1.5rem;
         color: $white;
+       @include md {
+        width: 100%;
+        padding: 0.5rem 1rem;
+       }
 
         &:hover {
           opacity: 0.5;
@@ -47,12 +52,12 @@
     width: 40px;
     height: 31px;
     background-color: $navbarRepsonsiveBg;
-    justify-content: space-between;
+
     @include md {
       margin-top: 3%;
-      background-color: $darkblue;
-      @include flexbox;
-      justify-content: space-between;
+      @include flexbox ($justifyContent:space-between, $flexdirection:column);
+   
+    
     
     }
     .bar {
