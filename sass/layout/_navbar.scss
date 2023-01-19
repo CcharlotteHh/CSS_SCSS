@@ -1,52 +1,48 @@
 .navbar {
   min-height: 100px;
-  max-width: 100%;
+  width: 100%;
   font-size: $primaryFontSize;
-  margin-left:1rem ;
-  @include flexbox($placeItems: center);
+ 
+  @include flexbox($placeItems: center, $placeContent:flex-start);
   @include md {
-    margin-left:0;
+    margin-left: 0;
     background-color: $darkblue;
     @include flexbox($direction: column, $alignItems: flex-start);
   }
-  .nav-branding {
-    font-size: $secondaryFontSize;
-  }
 
   .nav-menu {
-    font-size:$secondaryFontSize;
-   
-    @include flexbox($placeContent: start);
+    font-size: $secondaryFontSize;
+    width: 33%;
+    @include flexbox($justifyContent: space-evenly);
     @include md {
       @include flexbox($direction: column);
       display: none;
       width: 100%;
-     
-      
+
       margin-top: 10px;
-   
-    // font-size:$secondaryFontSize;
 
-    .nav-item {
-      @include md {
-        text-align: center;
-      }
-      .nav-link {
-        display: block;
-        margin-right: 1.5rem;
-        color: $white;
-       @include md {
-        width: 90%;
-        
-        padding: 0.5rem 1rem;
-       }
+      .nav-item {
+        @include md {
+          width: 90%;
+          text-align: center;
+          
+        }
+        .nav-link {
+          color: $white;
+          display: block;
+         
 
-        &:hover {
-          opacity: 0.5;
+          @include md {
+            width: 90%;
+            padding: 0.5rem 1rem;
+          }
+
+          &:hover {
+            opacity: 0.5;
+          }
         }
       }
     }
-     }
   }
   .hamburger {
     position: absolute;
@@ -59,10 +55,7 @@
 
     @include md {
       margin-top: 3%;
-      @include flexbox ($justifyContent:space-between, $direction:column);
-   
-    
-    
+      @include flexbox($justifyContent: space-between, $direction: column);
     }
     .bar {
       height: 3px;
