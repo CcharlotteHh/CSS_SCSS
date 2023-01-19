@@ -96,7 +96,7 @@ a {
 .aboutMain {
   background-color: #483261;
   color: white;
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -117,15 +117,13 @@ a {
   }
 }
 .aboutMain .aboutImg {
-  height: 60%;
   width: 40%;
-  height: 40%;
+  height: 60%;
   margin-left: 2%;
 }
 @media (max-width: 700px) {
   .aboutMain .aboutImg {
-    margin-top: 5%;
-    height: 40%;
+    margin-top: 20%;
   }
 }
 .aboutMain .aboutImg img {
@@ -191,19 +189,12 @@ a {
   width: 100%;
   background-color: #0b2153;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   flex-wrap: nowrap;
   flex-shrink: 0;
   flex-grow: 0;
-}
-@media (max-width: 700px) {
-  .contact .contact-container {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-  .contact .contact-container .map iframe {
-    height: 500px;
-  }
 }
 
 .navbar {
@@ -244,34 +235,38 @@ a {
 }
 @media (max-width: 700px) {
   .navbar .nav-menu {
-    display: none;
-    width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     flex-shrink: 0;
     flex-grow: 0;
-    padding: 1rem;
+    display: none;
+    width: 100%;
+    margin-top: 10px;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 700px) and (max-width: 700px) {
   .navbar .nav-menu .nav-item {
     text-align: center;
   }
 }
-.navbar .nav-menu .nav-item .nav-link {
-  display: block;
-  margin-right: 1.5rem;
-  color: white;
-}
 @media (max-width: 700px) {
   .navbar .nav-menu .nav-item .nav-link {
-    width: 100%;
+    display: block;
+    margin-right: 1.5rem;
+    color: white;
+  }
+}
+@media (max-width: 700px) and (max-width: 700px) {
+  .navbar .nav-menu .nav-item .nav-link {
+    width: 90%;
     padding: 0.5rem 1rem;
   }
 }
-.navbar .nav-menu .nav-item .nav-link:hover {
-  opacity: 0.5;
+@media (max-width: 700px) {
+  .navbar .nav-menu .nav-item .nav-link:hover {
+    opacity: 0.5;
+  }
 }
 .navbar .hamburger {
   position: absolute;
@@ -286,7 +281,8 @@ a {
   .navbar .hamburger {
     margin-top: 3%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: space-between;
     flex-wrap: nowrap;
     flex-shrink: 0;
     flex-grow: 0;
@@ -298,8 +294,14 @@ a {
   background-color: white;
 }
 
+.typing-slider {
+  height: 38%;
+  max-width: 100%;
+}
+
 p {
   color: white;
+  max-width: 100%;
 }
 
 @keyframes cursor {
@@ -330,6 +332,9 @@ p {
   50% {
     font-size: 10rem;
     letter-spacing: 3px;
+    @media (max-width: 700px) {
+      font-size: 5rem;
+    }
   }
   to {
     font-size: 0;
@@ -394,7 +399,7 @@ p {
   transition: all 300ms ease-in;
   transform: scale(1.02);
 }
-@media (min-width: 770px) and (max-width: 770px) {
+@media (max-width: 960px) {
   .projectCard {
     width: 50%;
     background-color: green;
@@ -424,6 +429,7 @@ p {
 .projectCard .projectDesc h2 {
   font-size: 1.5rem;
   margin-top: 4%;
+  font-weight: bold;
 }
 .projectCard .projectDesc p {
   font-size: 16px;
@@ -527,6 +533,15 @@ p {
     grid-gap: rem(0px) rem(0px);
   }
 }
+@media (max-width: 700px) {
+  @supports (display: grid) {
+    .contact-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: rem(1rem) rem(1rem);
+    }
+  }
+}
 .contact-container .form-container {
   display: flex;
   flex-direction: column;
@@ -569,14 +584,19 @@ p {
   width: 100%;
   height: 100%;
 }
+@media (max-width: 700px) {
+  .map iframe {
+    height: 500px;
+  }
+}
 
 footer {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   flex-wrap: nowrap;
   flex-shrink: 0;
   flex-grow: 0;
-  justify-content: center;
   background-color: #0b2153;
   padding-bottom: 10px;
 }

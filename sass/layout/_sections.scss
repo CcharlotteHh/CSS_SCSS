@@ -17,7 +17,7 @@
 .aboutMain {
   background-color: $purple;
   color: $white;
-  height: 90vh;
+  height: $vh100;
   width: 100%;
   @include flexbox($justifyContent: center, $alignItems: center);
   @include md{
@@ -28,13 +28,12 @@
     
   }
   .aboutImg {
-    height: $aboutImgHeight;
     width: 40%;
-    height: 40%;
+    height: 60%;
     margin-left: 2%;
     @include md{
-      margin-top: 5%;  
-      height: 40%;    
+      margin-top: 20%;  
+       
      }
 
     img {
@@ -88,17 +87,7 @@
   height: $vh100;
   width: 100%;
   background-color: $blue;
-  @include flexbox;
+  @include flexbox ($direction:column,$alignItems:center,$justifyContent:center);
 
-  @media (max-width: 700px) {
-    .contact-container {
-      grid-template-columns: 1fr;
-      gap: 1rem;
-
-      .map iframe {
-        height: 500px;
-      }
-    }
-  }
 
 }

@@ -88,21 +88,5 @@
 @mixin prBtn{
   width: 80%;
   border: 1px solid white;
-  border-radius: 40px;
-
-  
-}
-//spacing
-@mixin padding($top, $right, $bottom, $left) {
-  padding-top: $top;
-  padding-right: $right;
-  padding-bottom: $bottom;
-  padding-left: $left;
-}
-//Margin mixin
-@mixin margin($top, $right, $bottom, $left) {
-  margin-top: $top;
-  margin-right: $right;
-  margin-bottom: $bottom;
-  margin-left: $left;
+  border-radius: 40px;  
 }

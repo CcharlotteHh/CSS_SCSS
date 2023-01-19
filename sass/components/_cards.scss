@@ -10,7 +10,7 @@
     transition: all 300ms ease-in;
     transform: scale(1.02);
   }
-  @include breakpoint($bp:770px) {
+  @include lg {
       
       width: 50%;
       background-color: green;
@@ -36,6 +36,7 @@
     h2 {
       font-size:$cardH2Size;
       margin-top: 4%;
+      font-weight: bold;
     }
     p {
       font-size: $cardPFontSize;
