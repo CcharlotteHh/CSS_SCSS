@@ -173,11 +173,12 @@
       <!--formcontainer-->
       <div class="form-container">
         <h3>Contact</h3>
-        <form method="POST" action="form.php" class="contact-form">
+        <form name="contact" method="POST" action="https://formspree.io/f/mnqynobq" class="contact-form" data-netlify="true">
           <input type="text" value="naam" placeholder="*Naam" required name="name">
           <input type="email" value="email" placeholder="*Email" required name="email">
-          <textarea name="" id="" cols="30" rows="10" placeholder="*bericht"></textarea>
-          <input type="submit" value="Verstuur" class="send-button">
+          <textarea name="message" id="" cols="30" rows="10" placeholder="*bericht"></textarea>
+          <input type="hidden" name="_next" value="http://localhost/Keuzedeel/sassproject/" />
+          <input  type="submit" value="Verstuur" class="send-button">
         </form>
       </div>
       <!--Map-->
